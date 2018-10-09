@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: wordpress-service
   labels:
-    app: worpress
-    tier: frontend
+    app: wordpress
 spec:
   selector:
-    app: worlpress
+    app: wordpress
+    tier: frontend
   type: LoadBalancer
   ports:
   - port: 80
