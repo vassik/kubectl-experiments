@@ -34,6 +34,11 @@ spec:
         volumeMounts:
         - name: ghost-pv-storage
           mountPath: /var/lib/ghost/content
+        resources:
+          requests:
+            cpu: "100m"
+          limits:
+            cpu: "200m"
       volumes:
       - name: ghost-pv-storage
         persistentVolumeClaim:
